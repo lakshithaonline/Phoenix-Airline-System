@@ -1,2 +1,3 @@
 # Phoenix-Airline-MVP-Project
-Phoenix Airline PVT is an airline with a small online flight booking system. Processes such as user management, flight management, and ticket management, are done manually. So, they require a web application to automate their manual processes. There are 3 types of users: Staff, Users (client), and the Admin. Users and Staff can create their accounts by themself. But Staff accounts must be approved by the admin also the admin can add staff members to the system. 
+Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,  
+
