@@ -521,9 +521,7 @@ section{
 
    display: flex;
    height: 60vh;
-  /* background: #ffa500;*/
-    background:#d2d6d6;
-   /*opacity: 0.9;*/
+   background:#d2d6d6;
    justify-content: center;
    align-items: center;
    width: 60%;
@@ -546,8 +544,7 @@ form .user-details .input-box{
 form .user-details .input-box input{
    height: 45px;
    width: 100%;
-   border-radius: 10px;
-   
+   border-radius: 10px;  
 }
 
 .user-details .input-box .details{
@@ -559,8 +556,7 @@ form .user-details .input-box input{
    width: 100%;
    outline: none;
    padding-left: 15px;
-   padding-right: 15px;
-   
+   padding-right: 15px;   
 }
 
 .details{
