@@ -186,6 +186,11 @@ section{
    color:var(--main-color);
 }
 
+.signout{
+   border: 1px solid #079bf7;
+   border-radius: 20px;
+   padding: 10px 10px;
+}
 
 #menu-btn{
    font-size: 2.5rem;
@@ -494,19 +499,21 @@ section{
 
 /*--------------------------- Book a flight ----------------------------*/
 #section2{
-    
     background-size: 1600px;
     display: inline-block;
     width: 100%;
-    /*background-image: url("../images/flightbg.jpg");*/
-           margin-top: 20px;
+    margin-top: 20px;
     background-size: 1000px;
-    height: 520px;
+    height: 650px;
     font-size: 15px;
+}
 
+.heading-title{
+   margin-top: 120px;
 }
 
 .trip-details{
+   margin-top: 10px;
    margin-bottom: 20px;
 }
 
