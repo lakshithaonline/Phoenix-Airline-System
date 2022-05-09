@@ -491,3 +491,124 @@ section{
    margin-top: 2rem;
 }
 
+
+
+
+
+
+/*footer css begining*/
+.footer
+{
+   position: relative;
+   width: 100%;
+   height: auto;  
+   background: black;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   font-size: 12px;
+}
+.ext
+{
+   color: #fff;
+   transition: all 0.3s ease;
+}
+.ext:hover
+{
+   color: #00d5ff;
+}
+.containerx
+   {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   flex-direction: row;
+   }
+.sec
+{
+   margin-right: 10px;
+   margin-top: 30px;
+   /*background-color: red;*/
+}
+.green
+{
+   margin-left: 0 !important;
+}
+.Aboutus
+{
+   width: 30%;
+   padding-left: 30px;
+}
+.topic
+{
+   font-size: 22px;
+   font-weight: 600;
+   color: #fff;
+   margin-bottom: 16px;
+   position: relative;
+}
+.p1
+{
+   text-align: justify;
+   color: #fff;
+}
+.TC
+{
+   position: relative;
+   width: 25%;
+}
+.services
+{
+   width: calc(35% - 100px);
+   margin-right: 0 !important;
+}  
+.ma
+{
+   line-height: 36px;
+   display: inline-block;
+   color: #fff;
+   font-weight:normal;
+   text-decoration: none;
+   margin-bottom: -10px;
+   text-transform: lowercase;
+}
+.blue
+{
+   width: 60%;
+   position: relative;
+}
+.sec1
+{
+   margin-right: 40px;
+   margin-top: 5px;
+}
+.sec2
+{
+   margin-left: 0px;
+   
+}
+
+.media-iconsa
+{
+   font-size:25px;
+   
+   margin: 10px 13px 0 0;
+   display: inline-block;
+   text-align: center;
+   line-height: 43px;
+   transition: all 0.3s ease;
+   
+   color: white;
+}
+.media-iconsa:hover
+{  
+   color: #00d5ff;   
+}
+.bottom
+{
+   text-orientation: inline;
+   color: #d9d9d9;   
+
+}
+/*footer css end*/
