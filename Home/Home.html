@@ -209,7 +209,30 @@
 <!----------------------------------- Flight status -------------------------------------------->
    <div id="section3">
          <h1 class="heading-title1">Flight Status</h1>
-   
+         <div class="container-1">
+            <form action="" method="POST">
+               <div class="user-details">
+                  <div class="input-box">
+                     <span class="details">From</span>
+                     <input type="text" name="flightfrom" placeholder="Airport name" required>
+                  </div>
+                  <div class="input-box">
+                     <span class="details">To</span>
+                      <input type="text" name="flightto" placeholder="Airport name" required>
+                  </div>         
+                  <div class="check-box">
+                     <input type="checkbox" name="fID" value="fID"> Search by flight ID
+                  </div>
+                  <div class="input-box">
+                     <span class="details">Flight ID</span>
+                     <input type="text" name="flightID" placeholder="Enter the Flight ID">
+                  </div>
+               </div>   
+               <div class="button2">
+                  <input type="submit" value="Search">
+               </div>
+            </form>
+         </div>
    
    
 <!-- booking section starts  -->
