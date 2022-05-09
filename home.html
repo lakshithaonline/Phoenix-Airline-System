@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="./css/style_home.css">
+
+
+<script type="text/javascript">
+         function text(x){
+            if (x==0) 
+               document.getElementById("mycode").style.display = "block";
+            else
+               document.getElementById("mycode").style.display = "none";
+            return;
+         }
+      </script>
+
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="home.php" class="logo"><img src="./images/445.png" style="height: 50px; width: 150px;"></a>
+
+   <nav class="navbar">
+   
+      <a href="#home">Home</a>
+      <a href="#section2">Book a flight</a>
+      <a href="#section3">Flight Status</a>
+      <a href="#section4">Profile</a>
+      <a href="...." style="background-color: red; border-radius: 20px;">Sign Out</a>
+   
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+<!-- home section starts  -->
+<div id="home">
+<section class="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide slide" style="background:url(images/img9.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>travel around the world</h3>
+               <a href="package.php" class="btn">discover more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide" style="background:url(images/img4.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>fly with comfort</h3>
+               <a href="package.php" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>make new experiences</h3>
+               <a href="package.php" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url(images/img6.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>enjoy new flavours</h3>
+               <a href="package.php" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>relax to your hearts content</h3>
+               <a href="package.php" class="btn">discover more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>make your tour worthwhile</h3>
+               <a href="package.php" class="btn">discover more</a>
+            </div>
+         </div>
+         
+         <div class="swiper-slide slide" style="background:url(images/img7.jpg) no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>discover new places</h3>
+               <a href="package.php" class="btn">discover more</a>
+            </div>
+         </div>
+        
+         
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+</div>
+<!-- home section ends -->
+
+
+<!-- home packages section starts  -->
+
+<section class="home-packages">
+
+   <h1 class="heading-title"> offers </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="./images/img12.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>adventure & tour</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <a href="book.php" class="btn2">book now</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="./images/img-7.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>adventure & tour</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <a href="book.php" class="btn2">book now</a>
+         </div>
+      </div>
+      
+      <div class="box">
+         <div class="image">
+            <img src="./images/img11.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>adventure & tour</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <a href="book.php" class="btn2">book now</a>
+         </div>
+      </div>
+
+   </div>
+
+   
+</section>
+
+<!-- home packages section ends -->
+ <!--------------------------- Book a flight ---------------------------------------------->
+      <div id="section2">
+         <h1 class="heading-title">Book your flight today</h1>
+         <div class="container">
+            <form action="" method="POST">
+               <div class="trip-details">
+                  <input type="radio" name="trip" value="roundtrip" onclick="text(0)" checked><b> Roundtrip </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="trip" value="oneway" onclick="text(1)"> <b>One way</b>
+               </div>
+               <div class="user-details">
+                  <div class="input-box">
+                     <span class="details">Departing Airport</span>
+                     <input type="text" name="flyfrom" placeholder="Departing airport name" required>
+                  </div>
+
+                  <div class="input-box">
+                     <span class="details">Destination Airport</span>
+                     <input type="text" name="flyto" placeholder="Destination airport name" required>
+                  </div>
+                  <div class="input-box">
+                     <span class="details">Depart date</span>
+                     <input type="date" name="departing" placeholder="Departing" required>
+                  </div>
+                  <div class="input-box" id="mycode">
+                     <span class="details">Returning date</span>
+                     <input type="date" name="returning" placeholder="Returning" required>
+                  </div>
+               </div>
+               <div class="button">
+                  <input type="submit" value="Show Flights">
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <!----------------------------------- Flight status -------------------------------------------->
+
+
+     
+      <div id="section3">
+         <h1 class="heading-title1">Flight Status</h1>
+         <div class="container-1">
+            <form action="" method="POST">
+               <div class="user-details">
+                  <div class="input-box">
+                     <span class="details">From</span>
+                     <input type="text" name="flightfrom" placeholder="Airport name" required>
+                  </div>
+                  <div class="input-box">
+                     <span class="details">To</span>
+                      <input type="text" name="flightto" placeholder="Airport name" required>
+                  </div>         
+                  <div class="check-box">
+                     <input type="checkbox" name="fID" value="fID"> Search by flight ID
+                  </div>
+                  <div class="input-box">
+                     <span class="details">Flight ID</span>
+                     <input type="text" name="flightID" placeholder="Enter the Flight ID">
+                  </div>
+               </div>   
+               <div class="button2">
+                  <input type="submit" value="Search">
+               </div>
+            </form>
+         </div>
+      </div>
+
+<!-- booking section starts  -->
+
+<section class="booking">
+
+   <h1 class="heading-title">Contact us</h1>
+
+   <form action="book_form.php" method="post" class="book-form">
+
+      <div class="flex">
+         <div class="inputBox">
+            <span style="font-size: 15px;">name :</span>
+            <input type="text" placeholder="enter your name" name="name">
+         </div>
+         <div class="inputBox">
+            <span style="font-size: 15px;">email :</span>
+            <input type="email" placeholder="enter your email" name="email">
+         </div>
+         <div class="inputBox">
+            <span style="font-size: 15px;">phone :</span>
+            <input type="number" placeholder="enter your number" name="phone">
+         </div>
+          <div class="inputBox">
+            <span style="font-size: 15px;">Comments :</span>
+            <input type="text" placeholder="any thoughts?" name="message">
+         </div>
+         
+      </div>
+      <div class="inputBox">
+      <input type="submit" value="submit" class="btn3" name="send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+       
+         <input type="rest" value="cancle" class="btn3" name="delete">
+      </div>
+
+
+   </form>
+
+</section>
+
+<!-- booking section ends -->
+
+<!-- home offer section starts  -->
+
+<section class="home-offer">
+   <div class="content">
+      <h3>upto 50% off</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempora assumenda, debitis aliquid nesciunt maiores quas! Magni cumque quaerat saepe!</p>
+      <a href="book.php" class="btn4">book now</a>
+   </div>
+</section>
+
+<!-- home offer section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div>
+        <div class="containerx">
+          <div class="sec Aboutus">
+            <div class="topic">About us</div>
+              <p class="p1">At Phonex airlines, we believe in putting our extensive resources to good use by contributing to the communities we touch. Through our philanthrophic efforts and local presence, we're working to better the lives of those around us.</p>
+              <br>
+              <p class="p1">Contact Number: 078-5568889</p>           
+          </div>
+          <div class="sec services">
+            <div class="topic" style="margin-left: 0px;">Services</div>
+              <div><a href="index.html" class="ma ext">Sri Lankan Holidays</a></div>
+              <div><a href="Product.php" class="ma ext">Sri Lankan Catering</a></div>
+              <div><a href="events.html" class="ma ext">Cargo</a></div>
+              <div><a href="About us.html" class="ma ext">Training</a></div>
+              <div><a href="Contact us.html" class="ma ext">Online chat support</a></div> 
+          </div>
+          <div class="sec TC">
+            <div class="topic">Terms & conditions</div>
+              <div><a href="" class="ma ext">Online Booking Terms of Use</a></div>
+              <div><a href="" class="ma ext">Conditions of Carriage</a></div>
+              <div><a href="" class="ma ext">Notices For Travel Agents</a></div>
+              <div><a href="" class="ma ext">Service Fees at Ticket Office</a></div> 
+          </div>
+        </div>
+        <div class="containerx">
+          <div class="blue sec1" style="width: 10%; padding-left: 50px;">    <!--background-color: blue;-->       
+            <div class="sec2">
+              <a href="index.html"><img src="./images/footerlogo.jpg" height="150px" width="150px"></a>
+            </div>          
+          </div>
+          <div class=" green sec1"style=" padding-right: 420px;"><!--background-color: green;-->
+            <h2 style="color: white;padding-top: 45px;padding-left: 20px;">Follow us</h2>
+            <div style="border:none;">
+              <a href="https://www.instagram.com/donationgrp03?r=nametag" class="media-iconsa"><i class='fab fa-instagram'></i></a>
+              <a href="https://twitter.com/Donatio66123075" class="media-iconsa"><i class='fab fa-twitter'></i></a>
+              <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" class="media-iconsa"><i class='fab fa-linkedin-in'></i></a>
+              <a href="https://www.facebook.com/Donations-102087662222457" class="media-iconsa"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+      </div>
+      <div class="bottom"> 
+        <!--style="background-color:purple;"-->
+        <p style=" padding-left: 430px;">2022 &#169; Sri Lankan IT Systems</p>
+      </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="./js/js_home.js"></script>
+
+
+
+</body>
+</html>
