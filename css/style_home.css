@@ -499,17 +499,15 @@ section{
 
 /*--------------------------- Book a flight ----------------------------*/
 #section2{
-    
     background-size: 1600px;
     display: inline-block;
     width: 100%;
-    /*background-image: url("../images/flightbg.jpg");*/
-           margin-top: 20px;
+    margin-top: 20px;
     background-size: 1000px;
-    height: 520px;
+    height: 650px;
     font-size: 15px;
-
 }
+
 
 .trip-details{
    margin-bottom: 20px;
