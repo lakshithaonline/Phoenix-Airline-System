@@ -508,8 +508,12 @@ section{
     font-size: 15px;
 }
 
+.heading-title{
+   margin-top: 120px;
+}
 
 .trip-details{
+   margin-top: 10px;
    margin-bottom: 20px;
 }
 
