@@ -174,7 +174,38 @@
 <!--------------------------- Book a flight ---------------------------------------------->
       <div id="section2">
          <h1 class="heading-title">Book your flight today</h1>
-   
+         <div class="container">
+            <form action="" method="POST">
+               <div class="trip-details">
+                  <input type="radio" name="trip" value="roundtrip" onclick="text(0)" checked><b> Roundtrip </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="trip" value="oneway" onclick="text(1)"> <b>One way</b>
+               </div>
+               <div class="user-details">
+                  <div class="input-box">
+                     <span class="details">Departing Airport</span>
+                     <input type="text" name="flyfrom" placeholder="Departing airport name" required>
+                  </div>
+
+                  <div class="input-box">
+                     <span class="details">Destination Airport</span>
+                     <input type="text" name="flyto" placeholder="Destination airport name" required>
+                  </div>
+                  <div class="input-box">
+                     <span class="details">Depart date</span>
+                     <input type="date" name="departing" placeholder="Departing" required>
+                  </div>
+                  <div class="input-box" id="mycode">
+                     <span class="details">Returning date</span>
+                     <input type="date" name="returning" placeholder="Returning" required>
+                  </div>
+               </div>
+               <div class="button">
+                  <input type="submit" value="Show Flights">
+               </div>
+            </form>
+         </div>
+         
+         
 <!-- booking section starts  -->
 
 <section class="booking">
