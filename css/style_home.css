@@ -584,15 +584,13 @@ form .user-details .input-box input{
 
 /*------------------------------ Flight status ------------------------------*/
 #section3{
-    
     display: inline-block;
     width: 100%;
     background-position: center;
-    /*background-color: #fde989;*/
     background-image: url("../images/flightbg.jpg");
-    height: 650px;
+    background-repeat: no-repeat;
+    height: 630px;
     font-size: 15px;
-
 }
 
 .check-box{
@@ -604,7 +602,6 @@ form .user-details .input-box input{
 .container-1{
    background: #d2d6d6;
    display: flex;
-  /* border: 1px solid darkorange;*/
    justify-content: center;
    align-items: center;
    width: 50%;
