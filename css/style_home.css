@@ -186,6 +186,11 @@ section{
    color:var(--main-color);
 }
 
+.signout{
+   border: 1px solid #079bf7;
+   border-radius: 20px;
+   padding: 10px 10px;
+}
 
 #menu-btn{
    font-size: 2.5rem;
