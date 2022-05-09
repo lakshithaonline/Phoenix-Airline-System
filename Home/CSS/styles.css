@@ -445,3 +445,49 @@ section{
    text-align: center;
    margin-top: 2rem;
 }
+
+.booking .book-form{
+   padding:2rem;
+   background: #c7c9c9;
+   border-radius: 15px;
+}
+
+.booking .book-form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap:2rem;
+}
+
+.booking .book-form .flex .inputBox{
+   flex:1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input{
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color:black;
+   text-transform: none;
+   margin-top: 1.5rem;
+   border-radius: 15px; 
+}
+
+.booking .book-form .flex .inputBox input:focus{
+   background: var(--black);
+   color:var(--white);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+   color:var(--light-white);
+}
+
+.booking .book-form .flex .inputBox span{
+   font-size: 1.5rem;
+   color:black;
+    font-weight: bold;
+}
+
+.booking .book-form .btn{
+   margin-top: 2rem;
+}
+
