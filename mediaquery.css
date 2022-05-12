@@ -1,0 +1,95 @@
+@media screen and (max-width:1200px){
+   .bsection {
+      height: 180vh;
+   }
+
+   .bsection .bsection-center {
+      top: 50%;
+   }
+
+   .bcontainer{
+      padding-top: 150px;
+   }
+
+   #section3{
+      height: 60vh;
+   }
+
+   .fcontainer{
+      padding-top: 140px;
+   }
+}
+
+@media screen and (max-width:991px){
+   .bsection {
+      height: 170vh;
+   }
+
+   .bsection .bsection-center {
+      top: 45%;
+   }
+
+   #section3{
+      height: 65vh;
+   }
+
+}
+
+@media screen and (max-width:768px){
+   .signout{
+      margin-left: 285px;
+      width: 160px;
+      padding: 0 0;
+   }
+
+   .signout-btn{
+      padding-right: 0px;
+   }
+
+    #menu-btn{
+      margin-bottom: 30px;
+   }
+}
+
+@media screen and (max-width:450px){
+
+   .bsection{
+      width: 350px;
+      margin: auto auto;
+      height: 170vh; 
+   }
+
+   .bcontainer{
+      padding-top: 50px;
+   }
+
+   .booking-form .form-header h1{
+      font-size: 25px;
+   }
+
+   .booking-form .submit-btn {
+      padding: 0px 40px;
+      margin: 0 60px;
+   }
+
+   #section3{
+      height: 70%;     
+   } 
+
+   .fcontainer{
+      width: 350px;
+      margin: auto auto;
+      padding-top: 60px;
+   }
+
+   .signout{
+      margin-left: 130px;
+      width: 160px;
+      padding: 0 0;
+   }
+
+   .signout-btn{
+      padding-right: 0px;
+   }
+
+}
