@@ -85,6 +85,7 @@ section{
    margin: 1px 1px 1px black;
    font-weight: bold;
 }
+
 .btn2{
    display: inline-block;
    background:#036dad;
@@ -101,7 +102,9 @@ section{
    color: white;
    margin: 1px 1px 1px black;
    font-weight: bold;
+   text-decoration: none;
 }
+
 .btn3{
    width: 105px;
    height: 40px;
@@ -138,6 +141,7 @@ section{
    color: white;
    margin: 1px 1px 1px black;
    font-weight: bold;
+   text-decoration: none;
 }
 .heading-title{
    text-align: center;
@@ -160,17 +164,19 @@ section{
    z-index: 1000;
    background-color: var(--white);
    display: flex;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
+   padding-top: 4rem;
+   padding-bottom: 0rem;
    box-shadow: var(--box-shadow);
    align-items: center;
    justify-content: space-between;
+   height: 13vh;
 }
 
 .header .logo{
    padding: 0px 0px;
-
+   margin-bottom: 5rem;
 }
+
 .header .logo{
    font-size: 2.5rem;
    color:var(--black);
@@ -184,13 +190,28 @@ section{
 
 .header .navbar a:hover{
    color:var(--main-color);
+   text-decoration: none;
 }
 
-.signout{
-   border: 1px solid #079bf7;
+
+
+.signout-btn{
+   padding-right: 20px;
+   font-weight: bold;
+   background-color: #036dad;
    border-radius: 20px;
-   padding: 10px 10px;
+   padding: 5px 10px 5px 10px;
+   margin-left: 25px;
 }
+
+.signout-btn:hover{
+   background-color: #023d61;
+
+}
+
+
+
+
 
 #menu-btn{
    font-size: 2.5rem;
@@ -383,9 +404,11 @@ section{
 
 .home-offer .content p{
    font-size: 1.5rem;
-   color:var(--light-black);
+   color:black;
    line-height: 2;
    padding:1rem 0;
+   text-transform: none;
+
 }
 
 
@@ -471,16 +494,12 @@ section{
    width: 100%;
    padding:1.2rem 1.4rem;
    font-size: 1.8rem;
-   color:black;
+   
    text-transform: none;
    margin-top: 1.5rem;
    border-radius: 15px; 
 }
 
-.booking .book-form .flex .inputBox input:focus{
-   background: var(--black);
-   color:var(--white);
-}
 
 .booking .book-form .flex .inputBox input:focus::placeholder{
    color:var(--light-white);
@@ -498,272 +517,247 @@ section{
 
 
 /*--------------------------- Book a flight ----------------------------*/
+
 #section2{
-    background-size: 1600px;
-    display: inline-block;
-    width: 100%;
-    margin-top: 20px;
-    background-size: 1000px;
-    height: 650px;
-    font-size: 15px;
+   height: 70%;
 }
 
-.heading-title{
-   margin-top: 120px;
+.bcontainer{
+   padding-top: 80px;
 }
 
-.trip-details{
-   margin-top: 10px;
-   margin-bottom: 20px;
-}
-
-.container{
-
-   display: flex;
-   height: 60vh;
-   background:#d2d6d6;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-   margin: 0 260px;
-   padding: 0px 30px;
-   border-radius: 20px;
-}
-
-.container form .user-details{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-
-form .user-details .input-box{
-   margin: 20px 0 12px 0;
-   width: calc(100% / 2 - 20px);
-}
-
-form .user-details .input-box input{
-   height: 45px;
+.booking-form {
+   padding: 0px 40px 40px;
+   max-width: 642px;
    width: 100%;
-   border-radius: 10px;  
+   margin: auto;
+   background: #d2d6d6;
+   border-radius: 25px;
 }
 
-.user-details .input-box .details{
+.booking-form .form-header {
+   padding: 40px;
+   margin: 0px -40px 30px;
+   background: #1a1f24;
+   border-radius: 25px;
+}
+
+.booking-form .form-header h1 {
+   font-weight: 700;
+   text-transform: capitalize;
+   font-size: 38px;
+   margin: 0;
+   color: #fff;
+   text-align: center;
+}
+
+.booking-form .form-group {
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+   background-color: #fff;
+   height: 50px;
+   padding: 7px 20px 0px;
+   border: none;
+   border-radius: 20px;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   color: #000;
+}
+
+.booking-form select.form-control {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.booking-form .form-label {
+   position: absolute;
+   top: 15px;
+   left: 20px;
+   text-transform: uppercase;
+   color: #2d343b;
+   font-weight: 700;
+   line-height: 24px;
+   height: 24px;
+   font-size: 16px;
+   pointer-events: none;
+   -webkit-transition: 0.2s all;
+   transition: 0.2s all;
+}
+
+.booking-form .form-group.input-not-empty .form-label {
+   top: -10px;
+   color: #000;
+   font-size: 14px;
+}
+
+.booking-form .form-group:not( .input-not-empty) .form-control:not( :focus) {
+   color: transparent;
+}
+
+.booking-form .form-group .form-control:focus+.form-label {
+   top: -10px;
+   color: #000;
+   font-size: 14px;
+}
+
+.booking-form .form-checkbox input {
+   position: absolute !important;
+   margin-left: -9999px !important;
+   visibility: hidden !important;
+}
+
+.booking-form .form-checkbox label {
+   position: relative;
+   padding-top: 4px;
+   padding-left: 30px;
+   color: #000;
    font-weight: 700;
 }
 
-.user-details .input-box input{
-   height: 45px;
-   width: 100%;
-   outline: none;
-   padding-left: 15px;
-   padding-right: 15px;   
+.booking-form .form-checkbox label+label {
+   margin-left: 15px;
 }
 
-.details{
-   margin-bottom: 5px;
+.booking-form .form-checkbox input+span {
+   position: absolute;
+   left: 2px;
+   top: 4px;
+   width: 20px;
+   height: 20px;
+   border: 2px solid #1c2126;
+   background: white;
+   border-radius: 50%;
 }
 
-.button input{
+.booking-form .form-checkbox input:checked+span {
+   border-color: blue;
+}
+
+.booking-form .form-checkbox input+span:after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 0px;
+   height: 0px;
+   border-radius: 50%;
+   background-color: blue;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   -webkit-transition: 0.2s all;
+   transition: 0.2s all;
+}
+
+.booking-form .form-checkbox input:not(:checked)+span:after {
+   opacity: 0;
+}
+
+.booking-form .form-checkbox input:checked+span:after {
+   opacity: 1;
+   width: 10px;
+   height: 10px;
+}
+
+.booking-form .submit-btn {
+   color: #fff;
    background-color: #036dad;
-   border: 1px solid #036dad;
-   color: white;
-   font-weight: bold;
-   width: 120px;
-   height: 40px;
-   font-size: 15px;
-   margin-top: 45px;
-   margin-left: 310px;
-   cursor: pointer;
-   border-radius: 10px;
+   border-radius: 20px;
+   font-weight: 700;
+   height: 50px;
+   border: none;
+   padding: 0px 30px;
+
 }
 
-.button input:hover{
+.booking-form .submit-btn:hover{
    background-color: #023d61;
-   border: 1px solid #023d61;
 }
 
 /*------------------------------ Flight status ------------------------------*/
+
 #section3{
-    display: inline-block;
-    width: 100%;
-    background-position: center;
-    background-image: url("../images/flightbg.jpg");
-    background-repeat: no-repeat;
-    height: 630px;
-    font-size: 15px;
+   height: 70%;
 }
 
-.heading-title1{
-   margin-top: 110px;
+.fcontainer{
+   padding-top: 80px;
 }
 
-.check-box{
-   margin-top: 50px;
-   margin-left: 50px;
-   font-weight: bold;
+.form-group-1{
+   height: 50px;
+   padding: 15px 40px;
 }
 
-.container-1{
-   background: #d2d6d6;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 50%;
-   opacity: 0.9;
-   margin: 0 330px;
-   padding: 0px 35px;
-   height: 60vh;
-   border-radius: 20px;
-}
-
-.container-1 form .user-details{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-
-.button2 input{
-   background-color:#036dad;
-   border: 1px solid #036dad;
-   font-weight: bold;
-   color: white;
-   width: 120px;
-   height: 40px;
+.check{
+   color: black;
+   margin-left: 10px;
    font-size: 15px;
-   margin-top: 30px;
-   margin-left: 250px;
-   cursor: pointer;
-   border-radius: 10px;
-}
-
-.button2 input:hover{
-   background-color: #023d61;
-   border: 1px solid #023d61;
 }
 
 
-/*flight status ends*/
 
 
 
 
 
-/*footer css begining*/
-.footer
-{
-   position: relative;
-   width: 100%;
-   height: auto;  
-   background: black;
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   font-size: 12px;
-}
-.ext
-{
-   color: #fff;
-   transition: all 0.3s ease;
-}
-.ext:hover
-{
-   color: #00d5ff;
-}
-.containerx
-   {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   flex-direction: row;
-   }
-.sec
-{
-   margin-right: 10px;
-   margin-top: 30px;
-   /*background-color: red;*/
-}
-.green
-{
-   margin-left: 0 !important;
-}
-.Aboutus
-{
-   width: 30%;
-   padding-left: 30px;
-}
-.topic
-{
-   font-size: 22px;
-   font-weight: 600;
-   color: #fff;
-   margin-bottom: 16px;
-   position: relative;
-}
-.p1
-{
-   text-align: justify;
-   color: #fff;
-}
-.TC
-{
-   position: relative;
-   width: 25%;
-}
-.services
-{
-   width: calc(35% - 100px);
-   margin-right: 0 !important;
-}  
-.ma
-{
-   line-height: 36px;
-   display: inline-block;
-   color: #fff;
-   font-weight:normal;
-   text-decoration: none;
-   margin-bottom: -10px;
-   text-transform: lowercase;
-}
-.blue
-{
-   width: 60%;
-   position: relative;
-}
-.sec1
-{
-   margin-right: 40px;
-   margin-top: 5px;
-}
-.sec2
-{
-   margin-left: 0px;
-   
+.footer{
+   background-color: black;
+   background-size: cover;
+   background-position: center;
 }
 
-.media-iconsa
-{
-   font-size:25px;
-   
-   margin: 10px 13px 0 0;
-   display: inline-block;
+.footer .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap: 3rem;
+}
+
+
+.footer .box-container .box h3{
+   color:var(--white);
+   font-size: 2.5rem;
+   padding-bottom: 2rem;
+}
+
+.footer .box-container .box a{
+   color:white;
+   font-size: 1.5rem;
+   padding-bottom: 1.5rem;
+   display: block;
+}
+.footer .box-container .box p{
+   color:white;
+   font-size: 1.5rem;
+   padding-bottom: 1.5rem;
+   display: block;
+}
+
+.footer .box-container .box a i{
+   color:var(--main-color);
+   padding-right: .5rem;
+   transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i{
+   padding-right: 2rem;
+}
+
+.footer .credit{
    text-align: center;
-   line-height: 43px;
-   transition: all 0.3s ease;
-   
-   color: white;
+   padding-top: 3rem;
+   margin-top: 3rem;
+   border-top: .1rem solid var(--light-white);
+   font-size: 2rem;
+   color:var(--white);
 }
-.media-iconsa:hover
-{  
-   color: #00d5ff;   
-}
-.bottom
-{
-   text-orientation: inline;
-   color: #d9d9d9;   
 
+.footer .credit span{
+   color:var(--main-color);
 }
-/*footer css end*/
 
 /* media queries  */
 
@@ -772,6 +766,10 @@ form .user-details .input-box input{
    section{
       padding:3rem 5%;
    }
+   .home .slide .content h3{
+      font-size: 10vw;
+   }
+
 
 }
 
@@ -789,9 +787,11 @@ form .user-details .input-box input{
       font-size: 10vw;
    }
 
+
 }
 
 @media (max-width:768px){
+
 
    .heading h1{
       font-size: 4rem;
@@ -816,6 +816,7 @@ form .user-details .input-box input{
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
    }
 
+
    .header .navbar.active{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
    }
@@ -825,7 +826,6 @@ form .user-details .input-box input{
       margin:2rem;
       text-align: center;
    }
-
 }
 
 @media (max-width:450px){
@@ -837,5 +837,14 @@ form .user-details .input-box input{
    .heading-title{
       font-size: 3.5rem;
    }
+   .signout-btn{
 
+      text-align: center;
+      padding: 5px 10px 5px 10px;
+
+   }
+    .col-md-6 .form-btn .submit-btn{
+      margin-right: 400px;
+   }
+   
 }
