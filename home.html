@@ -12,9 +12,12 @@
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+   <!-- Bootstrap -->
+   <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
    <!-- custom css file link  -->
    <link rel="stylesheet" href="./css/style_home.css">
-
+   <link rel="stylesheet" type="text/css" href="mediaquery.css">
 
       <script type="text/javascript">
          function text(x){
@@ -35,13 +38,13 @@
    <a href="#home" class="logo"><img src="./images/445.png" style="height: 50px; width: 150px;"></a>
 
    <nav class="navbar">
-   
-      <a href="#home">Home</a>
-      <a href="#section2">Book a flight</a>
-      <a href="#section3">Flight Status</a>
-      <a href="#section4">Profile</a>
-      <a href="...." class="signout">Sign Out</a>
-   
+         
+         <a href="#home">Home</a>
+         <a href="#section2">Book a flight</a>
+         <a href="#section3">Flight Status</a>
+         <a href="#section4">Profile</a>
+         <a href="...." class="signout-btn" style="color: white;">Sign Out</a>
+      
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -136,8 +139,8 @@
             <img src="./images/img12.jpg" alt="">
          </div>
          <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <h3>Enjoy a rewarding stay</h3>
+            <p>Book hotels from a variety of choices while collecting many loyalty points</p>
             <a href="book.php" class="btn2">book now</a>
          </div>
       </div>
@@ -147,8 +150,8 @@
             <img src="./images/img-7.jpg" alt="">
          </div>
          <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <h3>Couple packages</h3>
+            <p>Enjoy to the fullest with your loved ones with many discounts</p>
             <a href="book.php" class="btn2">book now</a>
          </div>
       </div>
@@ -159,7 +162,7 @@
          </div>
          <div class="content">
             <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <p>Travel to your favourite palces and make new experiences with our new packages </p>
             <a href="book.php" class="btn2">book now</a>
          </div>
       </div>
@@ -172,71 +175,143 @@
    
 <!--------------------------- Book a flight ---------------------------------------------->
    
-      <div id="section2">
-         <h1 class="heading-title">Book your flight today</h1>
-         <div class="container">
-            <form action="" method="POST">
-               <div class="trip-details">
-                  <input type="radio" name="trip" value="roundtrip" onclick="text(0)" checked><b> Roundtrip </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="radio" name="trip" value="oneway" onclick="text(1)"> <b>One way</b>
+      <div id="section2" class="bsection">
+         <div class="bsection-center">
+            <div class="bcontainer">
+               <div class="row">
+                  <div class="booking-form">
+                     <div class="form-header">
+                        <h1>Book Your Flight</h1>
+                     </div>
+                     <form>
+                        <div class="form-group">
+                           <div class="form-checkbox">
+                              <label for="roundtrip">
+                                 <input type="radio" id="roundtrip" name="flight-type" onclick="text(0)" checked>
+                                 <span></span>Roundtrip
+                              </label>
+                              <label for="one-way">
+                                 <input type="radio" id="one-way" name="flight-type" onclick="text(1)">
+                                 <span></span>One way
+                              </label>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <input class="form-control" type="text">
+                           <span class="form-label">Flying from</span>
+                        </div>
+                        <div class="form-group">
+                           <input class="form-control" type="text">
+                           <span class="form-label">Flying to</span>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <input class="form-control" type="date">
+                                 <span class="form-label">Depart Date</span>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group" id="mycode">
+                                 <input class="form-control" type="date">
+                                 <span class="form-label">Return Date</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-btn">
+                           <button class="submit-btn">Show Flights</button>
+                        </div>
+                     </form>
+                  </div>
                </div>
-               <div class="user-details">
-                  <div class="input-box">
-                     <span class="details">Departing Airport</span>
-                     <input type="text" name="flyfrom" placeholder="Departing airport name" required>
-                  </div>
-
-                  <div class="input-box">
-                     <span class="details">Destination Airport</span>
-                     <input type="text" name="flyto" placeholder="Destination airport name" required>
-                  </div>
-                  <div class="input-box">
-                     <span class="details">Depart date</span>
-                     <input type="date" name="departing" placeholder="Departing" required>
-                  </div>
-                  <div class="input-box" id="mycode">
-                     <span class="details">Returning date</span>
-                     <input type="date" name="returning" placeholder="Returning" required>
-                  </div>
-               </div>
-               <div class="button">
-                  <input type="submit" value="Show Flights">
-               </div>
-            </form>
+            </div>
          </div>
       </div>
+
+      <script src="js/jquery.min.js"></script>
+         <script>
+            $('.form-control').each(function () {
+               floatedLabel($(this));
+            });
+
+            $('.form-control').on('input', function () {
+               floatedLabel($(this));
+            });
+
+            function floatedLabel(input) {
+               var $field = input.closest('.form-group');
+               if (input.val()) {
+                  $field.addClass('input-not-empty');
+               } else {
+                  $field.removeClass('input-not-empty');
+               }
+            }
+         </script>
 <!------------- Book a flight section ends ----------->
    
    
  <!----------------------------------- Flight status -------------------------------------------->
    
-      <div id="section3">
-         <h1 class="heading-title1">Flight Status</h1>
-         <div class="container-1">
-            <form action="" method="POST">
-               <div class="user-details">
-                  <div class="input-box">
-                     <span class="details">From</span>
-                     <input type="text" name="flightfrom" placeholder="Airport name" required>
+   <div id="section3" class="fsection">
+      <div class="fsection-center">
+         <div class="fcontainer">
+            <div class="row">
+               <div class="booking-form">
+                  <div class="form-header">
+                     <h1>Flight Status</h1>
                   </div>
-                  <div class="input-box">
-                     <span class="details">To</span>
-                      <input type="text" name="flightto" placeholder="Airport name" required>
-                  </div>         
-                  <div class="check-box">
-                     <input type="checkbox" name="fID" value="fID"> Search by flight ID
-                  </div>
-                  <div class="input-box">
-                     <span class="details">Flight ID</span>
-                     <input type="text" name="flightID" placeholder="Enter the Flight ID">
-                  </div>
-               </div>   
-               <div class="button2">
-                  <input type="submit" value="Search">
+                  <form>
+                     <div class="form-group">
+                        <input class="form-control" type="text">
+                        <span class="form-label">Origin Airport</span>
+                     </div>
+                     <div class="form-group">
+                        <input class="form-control" type="text">
+                        <span class="form-label">Destination Airport</span>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group-1">
+                              <input type="checkbox" name="fID" value="fID">
+                              <b class="check">Search By Flight ID</b>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input class="form-control" type="textbox">
+                              <span class="form-label">Flight ID</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-btn">
+                        <button class="submit-btn">Search Status</button>
+                     </div>
+                  </form>
                </div>
-            </form>
+            </div>
          </div>
       </div>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+      <script>
+         $('.form-control').each(function () {
+            floatedLabel($(this));
+         });
+
+         $('.form-control').on('input', function () {
+            floatedLabel($(this));
+         });
+
+         function floatedLabel(input) {
+            var $field = input.closest('.form-group');
+            if (input.val()) {
+               $field.addClass('input-not-empty');
+            } else {
+               $field.removeClass('input-not-empty');
+            }
+         }
+      </script>
 <!----------------- Flight status section ends --------------------->
    
  
@@ -285,8 +360,8 @@
 
 <section class="home-offer">
    <div class="content">
-      <h3>upto 50% off</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempora assumenda, debitis aliquid nesciunt maiores quas! Magni cumque quaerat saepe!</p>
+      <h3>upto 25% off</h3>
+      <p>Inflight duty free pre orders will be entitled for upto 25% discount! Search now and and enjoy more offers from Phoenix Airline. Valid till 31st of december.</p>
       <a href="book.php" class="btn4">book now</a>
    </div>
 </section>
@@ -295,52 +370,51 @@
 
 <!------------------------------- footer section starts  ----------------------------------------->
 
+
+<!-- footer section starts  -->
+
 <section class="footer">
 
-   <div>
-        <div class="containerx">
-          <div class="sec Aboutus">
-            <div class="topic">About us</div>
-              <p class="p1">At Phonex airlines, we believe in putting our extensive resources to good use by contributing to the communities we touch. Through our philanthrophic efforts and local presence, we're working to better the lives of those around us.</p>
-              <br>
-              <p class="p1">Contact Number: 078-5568889</p>           
-          </div>
-          <div class="sec services">
-            <div class="topic" style="margin-left: 0px;">Services</div>
-              <div><a href="index.html" class="ma ext">Sri Lankan Holidays</a></div>
-              <div><a href="Product.php" class="ma ext">Sri Lankan Catering</a></div>
-              <div><a href="events.html" class="ma ext">Cargo</a></div>
-              <div><a href="About us.html" class="ma ext">Training</a></div>
-              <div><a href="Contact us.html" class="ma ext">Online chat support</a></div> 
-          </div>
-          <div class="sec TC">
-            <div class="topic">Terms & conditions</div>
-              <div><a href="" class="ma ext">Online Booking Terms of Use</a></div>
-              <div><a href="" class="ma ext">Conditions of Carriage</a></div>
-              <div><a href="" class="ma ext">Notices For Travel Agents</a></div>
-              <div><a href="" class="ma ext">Service Fees at Ticket Office</a></div> 
-          </div>
-        </div>
-        <div class="containerx">
-          <div class="blue sec1" style="width: 10%; padding-left: 50px;">    <!--background-color: blue;-->       
-            <div class="sec2">
-              <a href="index.html"><img src="./images/footerlogo.jpg" height="150px" width="150px"></a>
-            </div>          
-          </div>
-          <div class=" green sec1"style=" padding-right: 420px;"><!--background-color: green;-->
-            <h2 style="color: white;padding-top: 45px;padding-left: 20px;">Follow us</h2>
-            <div style="border:none;">
-              <a href="https://www.instagram.com/donationgrp03?r=nametag" class="media-iconsa"><i class='fab fa-instagram'></i></a>
-              <a href="https://twitter.com/Donatio66123075" class="media-iconsa"><i class='fab fa-twitter'></i></a>
-              <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" class="media-iconsa"><i class='fab fa-linkedin-in'></i></a>
-              <a href="https://www.facebook.com/Donations-102087662222457" class="media-iconsa"><i class="fab fa-facebook-f"></i></a>
-            </div>
-          </div>
+   <div class="box-container">
+
+      <div class="box">
+         <h3>About us</h3>
+          <p class="p1">At Phonex airlines, we believe in putting our extensive resources to good use by contributing to the communities we touch. Through our philanthrophic efforts and local presence, we're working to better the lives of those around us.</p>
+              
+              <p class="p1">Contact Number: 078-5568889</p> 
       </div>
-      <div class="bottom"> 
-        <!--style="background-color:purple;"-->
-        <p style=" padding-left: 430px;">2022 &#169; Sri Lankan IT Systems</p>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.php"> <i class="fas fa-angle-right"></i> book a flight</a>
+         <a href="package.php"> <i class="fas fa-angle-right"></i> flight status</a>
+         <a href="book.php"> <i class="fas fa-angle-right"></i> profile</a>
       </div>
+
+      <div class="box">
+          <h3>Services</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> Sri lankan holidays</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> sri lankan catering</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> cargo</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> training</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> online caht suppoert</a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+   <div >
+              <a href="index.html"><center><img src="./images/navlogopng.png" height="70px" width="155px"></center></a>
+            </div> 
+
+   <div class="credit"> 2022 &#169; Sri Lankan IT Systems </div>
 
 </section>
 
