@@ -17,7 +17,7 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="./css/style_home.css">
-   <link rel="stylesheet" type="text/css" href="mediaquery.css">
+
 
       <script type="text/javascript">
          function text(x){
@@ -40,9 +40,9 @@
    <nav class="navbar">
          
          <a href="#home">Home</a>
-         <a href="#section2">Book a flight</a>
-         <a href="#section3">Flight Status</a>
-         <a href="#section4">Profile</a>
+         <a href="#1">Book a flight</a>
+         <a href="#2">Flight Status</a>
+         <a href="#profile">Profile</a>
          <a href="...." class="signout-btn" style="color: white;">Sign Out</a>
       
    </nav>
@@ -128,7 +128,7 @@
 
 <!------------------------- home packages section starts  ------------------------------>
 
-<section class="home-packages">
+<section class="home-packages" name="s1">
 
    <h1 class="heading-title"> offers </h1>
 
@@ -160,10 +160,10 @@
          <div class="image">
             <img src="./images/img11.jpg" alt="">
          </div>
-         <div class="content">
-            <h3>adventure & tour</h3>
+         <div class="content" >
+            <h3 >adventure & tour</h3>
             <p>Travel to your favourite palces and make new experiences with our new packages </p>
-            <a href="book.php" class="btn2">book now</a>
+            <a href="book.php" class="btn2"  id="1">book now</a>
          </div>
       </div>
 
@@ -173,60 +173,71 @@
 <!-- home packages section ends -->
    
    
-<!--------------------------- Book a flight ---------------------------------------------->
-   
-      <div id="section2" class="bsection">
-         <div class="bsection-center">
-            <div class="bcontainer">
-               <div class="row">
-                  <div class="booking-form">
-                     <div class="form-header">
-                        <h1>Book Your Flight</h1>
-                     </div>
-                     <form>
-                        <div class="form-group">
-                           <div class="form-checkbox">
-                              <label for="roundtrip">
-                                 <input type="radio" id="roundtrip" name="flight-type" onclick="text(0)" checked>
-                                 <span></span>Roundtrip
-                              </label>
-                              <label for="one-way">
-                                 <input type="radio" id="one-way" name="flight-type" onclick="text(1)">
-                                 <span></span>One way
-                              </label>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <input class="form-control" type="text">
-                           <span class="form-label">Flying from</span>
-                        </div>
-                        <div class="form-group">
-                           <input class="form-control" type="text">
-                           <span class="form-label">Flying to</span>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="form-group">
-                                 <input class="form-control" type="date">
-                                 <span class="form-label">Depart Date</span>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="form-group" id="mycode">
-                                 <input class="form-control" type="date">
-                                 <span class="form-label">Return Date</span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="form-btn">
-                           <button class="submit-btn">Show Flights</button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
+
+<!------------------------------------- book a flight section starts  ----------------------------------->
+
+<section class="booking" >
+
+   <h1 class="heading-title">Book Your Flight</h1>
+
+   <form action="book_form.php" method="post" class="book-form"  style="width: 100%; opacity: 0.9;">
+      <div class="flex">
+         <div class="form-group"  >
+            <label for="roundtrip">
+               <input type="radio" id="roundtrip" name="flight-type" onclick="text(0)" checked>
+               <span></span>Roundtrip &nbsp;&nbsp;
+            </label>
+            <label for="one-way">
+               <input type="radio" id="one-way" name="flight-type" onclick="text(1)">
+               <span></span>One way
+            </label>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-6">
+            <div class="form-group">
+               <span class="form-label" style="font-weight: bold; font-size: 1.8rem; text-transform: none; margin-top: 1.5rem;
+               border-radius: 15px; ">Flying from :</span>
+               <input class="form-control" type="text"  placeholder="Your location" style=" width: 100%;
+               padding:1.2rem 1.4rem; font-size: 1.8rem; color: var(--light-black); text-transform: none; margin-top: 1.5rem;
+               border-radius: 10px; ">
+            </div>
+         </div>
+         <div class="col-md-6">
+            <div class="form-group">
+               <span class="form-label" style="font-weight: bold; font-size: 1.8rem; text-transform: none; 
+               margin-top: 1.5rem;">Flying to :</span>
+               <input class="form-control" placeholder="Your destination" type="text" style=" width: 100%; padding:1.2rem 1.4rem; font-size: 1.8rem; color: var(--light-black); text-transform: none; margin-top: 1.5rem; border-radius: 10px; ">
             </div>
          </div>
       </div>
+
+      <div class="row">
+         <div class="col-md-6">
+            <div class="form-group">
+               <span class="form-label" style="font-weight: bold; width: 100%; font-size: 1.8rem; text-transform: none;
+               margin-top: 1.5rem; border-radius: 15px; ">Depart Date :</span>
+               <input class="form-control" type="date" style=" width: 100%; padding:1.2rem 1.4rem; font-size: 1.8rem;
+               color: var(--light-black); text-transform: uppercase; margin-top: 1.5rem; border-radius: 10px; ">
+            </div>
+         </div>
+         <div class="col-md-6">
+            <div class="form-group" id="mycode">
+               <span class="form-label" style="font-weight: bold; width: 100%; font-size: 1.8rem; text-transform: none;
+               margin-top: 1.5rem; border-radius: 15px; ">Return Date :</span>
+               <input class="form-control" type="date" style=" width: 100%; padding:1.2rem 1.4rem; font-size: 1.8rem;
+               color: var(--light-black); text-transform: uppercase; margin-top: 1.5rem; border-radius: 10px; ">
+            </div>
+         </div>
+      </div>
+                        
+      <center>
+         <input type="submit" value="search" class="btn3" name="send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="rest" value="cancle" class="btn3" name="delete" id="2">
+      </center> 
+   </form>
+</section>
 
       <script src="js/jquery.min.js"></script>
          <script>
@@ -239,7 +250,7 @@
             });
 
             function floatedLabel(input) {
-               var $field = input.closest('.form-group');
+               var $field = input.closest('.inputBox');
                if (input.val()) {
                   $field.addClass('input-not-empty');
                } else {
@@ -247,51 +258,43 @@
                }
             }
          </script>
-<!------------- Book a flight section ends ----------->
+<!-- book a flight section ends -->
+
    
-   
- <!----------------------------------- Flight status -------------------------------------------->
-   
-   <div id="section3" class="fsection">
-      <div class="fsection-center">
-         <div class="fcontainer">
-            <div class="row">
-               <div class="booking-form">
-                  <div class="form-header">
-                     <h1>Flight Status</h1>
-                  </div>
-                  <form>
-                     <div class="form-group">
-                        <input class="form-control" type="text">
-                        <span class="form-label">Origin Airport</span>
-                     </div>
-                     <div class="form-group">
-                        <input class="form-control" type="text">
-                        <span class="form-label">Destination Airport</span>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="form-group-1">
-                              <input type="checkbox" name="fID" value="fID">
-                              <b class="check">Search By Flight ID</b>
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input class="form-control" type="textbox">
-                              <span class="form-label">Flight ID</span>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="form-btn">
-                        <button class="submit-btn">Search Status</button>
-                     </div>
-                  </form>
-               </div>
+ 
+
+<!------------------------------------- flight status section starts  ----------------------------------->
+
+<section class="booking" name="s3">
+
+   <h1 class="heading-title">Flight Status</h1>
+
+   <form action="book_form.php" method="post" class="book-form" style="width: 100%;">
+      <div class="flex">
+         <div class="inputBox">
+            <input type="text" placeholder="Origin Airport" style="font-size: 15px;">
+         </div>
+         <div class="inputBox">
+            <input type="text" placeholder="Destination Airport" style="font-size: 15px;">
+         </div>
+         <div class="col-md-6">
+            <div class="form-group-1">
+               <input type="checkbox" name="fID" value="fID">
+                  <b class="check">Search By Flight ID</b>
             </div>
          </div>
+         <div class="inputBox">
+            <input type="text" placeholder="Flight ID" style="font-size: 15px;">
+         </div>  
       </div>
-   </div>
+      <div class="inputBox">
+      <center>
+         <input type="submit" value="search" class="btn3" name="send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="rest" value="cancle" class="btn3" name="delete">
+      </center> 
+   </form>
+</section>
+
 
    <script src="js/jquery.min.js"></script>
       <script>
@@ -312,49 +315,10 @@
             }
          }
       </script>
-<!----------------- Flight status section ends --------------------->
-   
- 
-<!------------------------------------- booking section starts  ----------------------------------->
 
-<section class="booking">
-
-   <h1 class="heading-title">Contact us</h1>
-
-   <form action="book_form.php" method="post" class="book-form">
-
-      <div class="flex">
-         <div class="inputBox">
-            <span style="font-size: 15px;">name :</span>
-            <input type="text" placeholder="enter your name" name="name">
-         </div>
-         <div class="inputBox">
-            <span style="font-size: 15px;">email :</span>
-            <input type="email" placeholder="enter your email" name="email">
-         </div>
-         <div class="inputBox">
-            <span style="font-size: 15px;">phone :</span>
-            <input type="number" placeholder="enter your number" name="phone">
-         </div>
-          <div class="inputBox">
-            <span style="font-size: 15px;">Comments :</span>
-            <input type="text" placeholder="any thoughts?" name="message">
-         </div>
-         
-      </div>
-      <div class="inputBox">
-      <input type="submit" value="submit" class="btn3" name="send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  
-       
-         <input type="rest" value="cancle" class="btn3" name="delete">
-      </div>
+<!-- flight status section ends -->
 
 
-   </form>
-
-</section>
-
-<!-- booking section ends -->
 
 <!------------------------- home offer section starts  ----------------------------------------->
 
@@ -368,10 +332,10 @@
 
 <!-- home offer section ends -->
 
+
+
 <!------------------------------- footer section starts  ----------------------------------------->
 
-
-<!-- footer section starts  -->
 
 <section class="footer">
 
