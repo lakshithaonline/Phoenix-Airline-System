@@ -489,6 +489,9 @@ section{
 .booking .book-form .flex .inputBox{
    flex:1 1 41rem;
 }
+.booking .book-form .flex .form-group{
+   flex:1 1 41rem;
+}
 
 .booking .book-form .flex .inputBox input{
    width: 100%;
@@ -518,12 +521,20 @@ section{
 
 /*--------------------------- Book a flight ----------------------------*/
 
-#section2{
-   height: 70%;
+.bsection {
+   position: relative;
+   height: 120vh;
+   width: 100%;
+   margin-bottom: -100px;
 }
 
-.bcontainer{
-   padding-top: 80px;
+.bsection .bsection-center {
+   position: absolute;
+   top: 45%;
+   left: 0;
+   right: 0;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
 }
 
 .booking-form {
@@ -551,42 +562,27 @@ section{
    text-align: center;
 }
 
-.booking-form .form-group {
+.book-form .form-group {
    position: relative;
-   margin-bottom: 30px;
 }
 
-.booking-form .form-control {
-   background-color: #fff;
-   height: 50px;
-   padding: 7px 20px 0px;
+.book-form .form-control {
+  
+   
+height: 40px;
    border: none;
-   border-radius: 20px;
+   border-radius: 15px;
    -webkit-box-shadow: none;
    box-shadow: none;
    color: #000;
 }
 
-.booking-form select.form-control {
+.book-form select.form-control {
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
 }
 
-.booking-form .form-label {
-   position: absolute;
-   top: 15px;
-   left: 20px;
-   text-transform: uppercase;
-   color: #2d343b;
-   font-weight: 700;
-   line-height: 24px;
-   height: 24px;
-   font-size: 16px;
-   pointer-events: none;
-   -webkit-transition: 0.2s all;
-   transition: 0.2s all;
-}
 
 .booking-form .form-group.input-not-empty .form-label {
    top: -10px;
@@ -604,35 +600,24 @@ section{
    font-size: 14px;
 }
 
-.booking-form .form-checkbox input {
-   position: absolute !important;
-   margin-left: -9999px !important;
-   visibility: hidden !important;
-}
-
-.booking-form .form-checkbox label {
+.book-form .form-checkbox label {
    position: relative;
-   padding-top: 4px;
-   padding-left: 30px;
-   color: #000;
-   font-weight: 700;
 }
 
-.booking-form .form-checkbox label+label {
+.book-form .form-checkbox label+label {
    margin-left: 15px;
 }
 
 .booking-form .form-checkbox input+span {
-   position: absolute;
-   left: 2px;
-   top: 4px;
-   width: 20px;
-   height: 20px;
-   border: 2px solid #1c2126;
-   background: white;
-   border-radius: 50%;
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   font-weight: bold;
+   text-transform: none;
+   margin-top: 1.5rem;
+   border-radius: 15px; 
 }
-
+ 
 .booking-form .form-checkbox input:checked+span {
    border-color: blue;
 }
@@ -662,7 +647,7 @@ section{
    height: 10px;
 }
 
-.booking-form .submit-btn {
+.book-form .submit-btn {
    color: #fff;
    background-color: #036dad;
    border-radius: 20px;
@@ -670,21 +655,21 @@ section{
    height: 50px;
    border: none;
    padding: 0px 30px;
-
 }
 
-.booking-form .submit-btn:hover{
+.book-form .submit-btn:hover{
    background-color: #023d61;
 }
 
 /*------------------------------ Flight status ------------------------------*/
 
 #section3{
+   background-repeat: no-repeat;
    height: 70%;
 }
 
 .fcontainer{
-   padding-top: 80px;
+   padding-top: 60px;
 }
 
 .form-group-1{
@@ -786,12 +771,31 @@ section{
    .home .slide .content h3{
       font-size: 10vw;
    }
+   
+   .booking .row {
+    
+      display:inline-block;
+      margin-right: 5%;
+   } 
 
+   .form-control{
+      margin-right: 150px;
+   }
+}
+@media (max-width:890px){
 
+.booking .row {
+    
+      display:inline-block;
+      margin-right: 5%;
+   } 
+
+   .form-control{
+      margin-right: 100px;
+   }
 }
 
-@media (max-width:768px){
-
+@media (max-width:788px){
 
    .heading h1{
       font-size: 4rem;
@@ -826,9 +830,41 @@ section{
       margin:2rem;
       text-align: center;
    }
-}
+   .booking .row {
+    
+      display:inline-block;
+      margin-right: 5%;
+   } 
 
-@media (max-width:450px){
+   .form-control{
+      margin-right: 70px;
+   }
+}
+@media (max-width:720px){
+
+.booking .row {
+    
+      display:inline-block;
+      margin-right: 5%;
+   } 
+
+   .form-control{
+      margin-right: 50px;
+   }
+}
+@media (max-width:675px){
+
+.booking .row {
+    
+      display:inline-block;
+      margin-right: 5%;
+   } 
+
+   .form-control{
+      margin-right: 50px;
+   }
+}
+@media (max-width:665px){
 
    html{
       font-size: 50%;
@@ -846,5 +882,14 @@ section{
     .col-md-6 .form-btn .submit-btn{
       margin-right: 400px;
    }
-   
+   .booking .row {
+    
+      display:inline;
+      margin-right: 0px;
+   } 
+
+   .form-control{
+      margin-right: 0px;
+   }
+
 }
