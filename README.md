@@ -63,26 +63,45 @@ Following are the steps of work flow:
 
 # Interface - Public user
 
-* Login & Registrations 
+* Registrations 
+<img src="Project_Screenshots/Signup pages/10.png">
+
+* Login
+<img src="Project_Screenshots/Login Pages/05.png">
+
 * Home Page - user's Dashboard 
+<img src="Project_Screenshots/Home.jsp/75.png">
+
 * Book a flight
+<img src="Project_Screenshots/Book Filter Flights Form/15.png"> 
+<img src="Project_Screenshots/Book Filter Flights Table (Available Flights)/27.png">
+<img src="Project_Screenshots/Reserve Your Seat/30.png">
+<img src="Project_Screenshots/Reserve Your Seat/31.png">
+
 * Flight Status
+<img src="Project_Screenshots/Filter Flight Status Form/19.png">
+<img src="Project_Screenshots/Filter Flight Status Tables (Find Your Flight)/29.png">
+
 * Profile
+<img src="Project_Screenshots/User Profile/21.png">
+<img src="Project_Screenshots/User Profile/23.png">
+<img src="Project_Screenshots/User Profile/25.png">
 
 # Interface - Staff
 
-* Login & Registrations   
-<img src="Project_Screenshots/Signup pages/10.png">
+* Staff Dashboard & User Account
+<img src="Project_Screenshots/StaffG1/46.png">
 
-* Staff Dashboard
-* User Account
 * flights
+<img src="Project_Screenshots/StaffG1/47.png">
 
 # Interface - Admin
 
-* Login & Registrations 
-* Admin Dashboard
-* User Account
+* Login
+<img src="Project_Screenshots/Login Pages/89.png">
+
+* Admin Dashboard 
+<img src="Project_Screenshots/Login Pages/89.png">   
 
 # How to run
 
