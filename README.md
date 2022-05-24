@@ -1,7 +1,9 @@
 # Phoenix Airline PVT 
 
 <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="125"/></a>
-[![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#)
+[![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#) 
+[![Welcome](https://img.shields.io/badge/Development%20of%20Enterprise%20Apps%20I-Final%20Project-orange)](#)
+
 
 Web-based fully responsive Flight Booking System for Phoenix Airline based on the Model View Controller (MVC) Architecture made using Java Servlets and Java Server Pages. Moreover, authentication and authorization for users are implemented using GlassFish Roles. The web application is also secured against SQL Injection and Cross-Site Scripting attacks.
 
