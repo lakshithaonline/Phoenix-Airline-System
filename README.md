@@ -10,7 +10,7 @@ Web-based fully responsive Flight Booking System for Phoenix Airline based on th
 ***Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,***
 * <a href="https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing">System Preview video</a>
 * <a href="https://drive.google.com/file/d/1Z-QOtPUB-BeIS2IWo5aYbIEYxN5avdzv/view?usp=sharing">Project File</a>
-* <a href="SQL - Database/phoenix_airline_db.sql">SQL - Please refer <b>How to run</b>before import</a>
+* <a href="SQL - Database/phoenix_airline_db.sql">SQL - Please refer <b>How to run</b> before import</a>
 
 # Technologies Used
 
