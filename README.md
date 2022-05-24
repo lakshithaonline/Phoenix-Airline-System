@@ -72,7 +72,7 @@ Following are the steps of work flow:
 # Interface - Staff
 
 * Login & Registrations   
-<img src="Project_Screenshots/Signup pages/10.png" alt="Girl in a jacket" width="1920" height="1080">
+<img src="Project_Screenshots/Signup pages/10.png" alt="Girl in a jacket" width="1080" height="720">
 
 * Staff Dashboard
 * User Account
