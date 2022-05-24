@@ -1,6 +1,4 @@
-# Phoenix Airline PVT 
-![Test Image 7](https://github.com/tograh/testrepository/master/3DTest.png 634)
-
+# Phoenix Airline PVT <img src="Phoenix-Airline-MVP-Project/blob/main/phoenix-colorful-logo-vector_557569-218%20copywwww%20copy.png" alt="Girl in a jacket" width="500" height="600">
 
 <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="125"/></a>
 [![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#)
