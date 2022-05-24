@@ -60,8 +60,9 @@ Following are the steps of work flow:
       * Find flight using Tikect ID
       * Find flight selecting From/To
 
-# System Preview
+# System Preview video & Project File
 <a href="https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing">Click Here</a>
+<a href="https://drive.google.com/file/d/1Z-QOtPUB-BeIS2IWo5aYbIEYxN5avdzv/view?usp=sharing">Click Here</a>
 
 # Interface - Public user
 
