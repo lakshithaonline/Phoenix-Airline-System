@@ -113,7 +113,8 @@ Following are the steps of work flow:
 * Java SE Development Kit 8 (JDK 8)
 * After installing JDK 8, install NetBeans IDE with all the features including GlassFish Server.
 
-2. Download and unzip the project and open it in Netbeans
+2. Import the SQL files using PhpMyAdmin - <a href="SQL - Database/phoenix_airline_db.sql">SQL</a>
+3. Download and unzip the project and open it in Netbeans
 
 
 
