@@ -1,7 +1,7 @@
 # Phoenix-Airline (Flight Booking System for Airlines)
-[![Welcome](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](#)
+[![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-green)](#)
 
-https://img.shields.io/badge/NSBM%20Green%20University-Welcome-green
+
 
 Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,
 
