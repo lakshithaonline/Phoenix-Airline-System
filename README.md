@@ -4,10 +4,10 @@
 [![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#) 
 [![Welcome](https://img.shields.io/badge/Development%20of%20Enterprise%20Apps%20I-Final%20Project-orange)](#)
 
+***Phoenix Airlines is a company that provides air transport services for traveling passengers and freight.
 
 Web-based fully responsive Flight Booking System for Phoenix Airline based on the Model View Controller (MVC) Architecture made using Java Servlets and Java Server Pages. Moreover, authentication and authorization for users are implemented using GlassFish Roles. The web application is also secured against SQL Injection and Cross-Site Scripting attacks.
 
-***Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,***
 * <a href="https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing">System Preview video</a>
 * <a href="https://drive.google.com/file/d/1Z-QOtPUB-BeIS2IWo5aYbIEYxN5avdzv/view?usp=sharing">Project File</a>
 * <a href="SQL - Database/phoenix_airline_db.sql">SQL - Please refer <b>How to run</b> before import</a>
