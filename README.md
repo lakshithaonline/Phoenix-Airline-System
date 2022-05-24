@@ -1,6 +1,6 @@
 # Phoenix Airline PVT
 [![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#)
-<a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="125"/></a>
+<a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="120"/></a>
 
 
 Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,
