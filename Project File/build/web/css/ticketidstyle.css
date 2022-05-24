@@ -1,0 +1,33 @@
+body
+{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.52), rgba(0, 0, 0, 0.73)), url('../images/banner23.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section
+{
+      margin-left: 400px;
+      margin-top: 100px;
+}
+p,h3,label
+{
+    color: black;
+    font-weight: bold;
+
+
+}
+.box-container
+{
+  background-image:
+  linear-gradient(rgba(170,170, 255, 0.52), rgba(0, 0, 0, 0.3));
+  height:500px;
+  width: 800px;
+  padding: 20px;
+  border: 5px solid gray;
+  box-shadow: 5px 10px #888888;
+  
+}
+.btn btn-success
+{
+    
+}
