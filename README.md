@@ -71,7 +71,9 @@ Following are the steps of work flow:
 
 # Interface - Staff
 
-* Login & Registrations 
+* Login & Registrations   
+<img src="Project_Screenshots/Signup pages/10.png" alt="Girl in a jacket" width="500" height="600">
+
 * Staff Dashboard
 * User Account
 * flights
