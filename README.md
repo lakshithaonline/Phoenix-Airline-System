@@ -1,4 +1,4 @@
-# Phoenix Airline PVT <img src="https://github.com/lakshithaonline/Phoenix-Airline-MVP-Project/blob/main/phoenix-colorful-logo-vector_557569-218%20copywwww%20copy.png"  width="100" height="45" style="padding-left: 20px;">
+# Phoenix Airline PVT 
 
 <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="125"/></a>
 [![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#)
