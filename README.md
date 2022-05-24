@@ -6,6 +6,7 @@ Phoenix Airline PVT is an airline with a small online flight booking system.  So
 
 
 # Technologies Used
+[![Technologies Used](https://img.shields.io/badge/Phoenix%20Airline-How%20to%20run-blue)](#)
 
 * Frontend: HTML, CSS, JavaScript, Jquery, Bootstrap, Java Server Pages (JSPs)
 * Backend: Java Servlets, Java Models, mySQL (Database)
@@ -77,6 +78,7 @@ Following are the steps of work flow:
 * Admin Dashboard
 * User Account
 
+# How to run
 [![How to Run ](https://img.shields.io/badge/Phoenix%20Airline-How%20to%20run-blue)](#)
 
 1- Install these:
