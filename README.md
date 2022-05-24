@@ -7,10 +7,9 @@
 
 Web-based fully responsive Flight Booking System for Phoenix Airline based on the Model View Controller (MVC) Architecture made using Java Servlets and Java Server Pages. Moreover, authentication and authorization for users are implemented using GlassFish Roles. The web application is also secured against SQL Injection and Cross-Site Scripting attacks.
 
-
-
-Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,
-
+***Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,***
+* <a href="https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing">System Preview video</a>
+* <a href="https://drive.google.com/file/d/1Z-QOtPUB-BeIS2IWo5aYbIEYxN5avdzv/view?usp=sharing">Project File</a>
 
 # Technologies Used
 
@@ -61,10 +60,6 @@ Following are the steps of work flow:
    user can find the booked flights or without booking user can view flight details and find. There is two types for find      flight
       * Find flight using Tikect ID
       * Find flight selecting From/To
-
-# System Preview video & Project File
-* <a href="https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing">Preview Video</a>
-* <a href="https://drive.google.com/file/d/1Z-QOtPUB-BeIS2IWo5aYbIEYxN5avdzv/view?usp=sharing">Project File</a>
 
 # Interface - Public user
 
