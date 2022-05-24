@@ -34,3 +34,22 @@ Following are the steps of work flow:
           - G2 Staff can view information and only add new flight details
 3. Public users can't enter the system without registration on the system, so the user needs to register and log in using the registered user name and email. 
 4. After login into the system public user can book a ticket for a flight, and without booking user can search or find flight details like arrival and departure date/time and user can view the reserved ticket list in the profile section and also can update profile details & contact the airline management to clarify anything about Phoenix-Airline
+   
+5. Ticket Booking procedure 
+
+   The user needs to select the type (compulsory)
+      * Return trip
+      * One Way
+      
+   The airline system has three flight ticket categories 
+      * Economical 
+      * Business
+      * First Class
+
+   A single per user can book flight tickets for up to 10 people. 
+      * 18+ Adult 
+      * 17- Chilled 
+
+
+
+
