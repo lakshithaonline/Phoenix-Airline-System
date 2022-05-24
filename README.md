@@ -1,4 +1,4 @@
-# <img src="Project_Screenshots/heading.png"> 
+# <img src="Project_Screenshots/heading2.png"> 
 
 <a href="#"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="125"/></a>
 [![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#) 
