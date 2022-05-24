@@ -60,6 +60,8 @@ Following are the steps of work flow:
       * Find flight using Tikect ID
       * Find flight selecting From/To
 
+# System Preview
+
 
 # Interface - Public user
 
@@ -101,7 +103,7 @@ Following are the steps of work flow:
 <img src="Project_Screenshots/Login Pages/89.png">
 
 * Admin Dashboard 
-<img src="Project_Screenshots/Login Pages/89.png">   
+<img src="Project_Screenshots/Admin/36.png">   
 
 # How to run
 
