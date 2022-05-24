@@ -27,7 +27,7 @@ Following are the steps of work flow:
 1. Airline Admin will add & can approve the airline management staff.
 2. There are two types of staff categories:
 
-Staff members need to register on the system using the staff registration form, and Staff can log in using a registered    email password after the admin approves and selects the staff grade. 
+   Staff members need to register on the system using the staff registration form, and Staff can log in using a registered    email password after the admin approves and selects the staff grade. 
       * Grade one Staff (G1)
           - G1 Staff can view, update and delete user information & flight section, and booking section 
       * Grade two Staff (G2)
