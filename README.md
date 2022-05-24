@@ -61,8 +61,8 @@ Following are the steps of work flow:
       * Find flight selecting From/To
 
 # System Preview video & Project File
-<a href="https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing">Click Here</a>
-<a href="https://drive.google.com/file/d/1Z-QOtPUB-BeIS2IWo5aYbIEYxN5avdzv/view?usp=sharing">Click Here</a>
+<a href="https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing">Preview Video</a>
+<a href="https://drive.google.com/file/d/1Z-QOtPUB-BeIS2IWo5aYbIEYxN5avdzv/view?usp=sharing">Project File</a>
 
 # Interface - Public user
 
