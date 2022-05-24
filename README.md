@@ -64,9 +64,6 @@ Following are the steps of work flow:
 
 
 # Interface - Public user
-<video>
-  <source src=" https://drive.google.com/file/d/10-pO-u18cYkmEB5Dl4CirgBcydHggm-S/view?usp=sharing" type="video/mp4">
-</video>
 
 * Registrations 
 <img src="Project_Screenshots/Signup pages/10.png">
