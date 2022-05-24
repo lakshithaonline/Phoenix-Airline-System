@@ -1,6 +1,11 @@
-# Phoenix Airline PVT
+# Phoenix Airline PVT ![Alt text](Phoenix-Airline-MVP-Project/phoenix-colorful-logo-vector_557569-218 copywwww copy.png?raw=true "Title")
+
+
+<a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="125"/></a>
 [![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#)
-<a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=lakshithaonline&style=flat-square" width="120"/></a>
+
+Web-based fully responsive Flight Booking System for Phoenix Airline based on the Model View Controller (MVC) Architecture made using Java Servlets and Java Server Pages. Moreover, authentication and authorization for users are implemented using GlassFish Roles. The web application is also secured against SQL Injection and Cross-Site Scripting attacks.
+
 
 
 Phoenix Airline PVT is an airline with a small online flight booking system.  So the application has ticket booking and many more facilities,
@@ -8,9 +13,9 @@ Phoenix Airline PVT is an airline with a small online flight booking system.  So
 
 # Technologies Used
 
-* Frontend: HTML, CSS, JavaScript, Jquery, Bootstrap, Java Server Pages (JSPs)
-* Backend: Java Servlets, Java Models, mySQL (Database)
-* Security Features: SQL Injection, Cross-Site Scripting (XSS), Glassfish roles
+* **Frontend**: HTML, CSS, JavaScript, Jquery, Bootstrap, Java Server Pages (JSPs)
+* **Backend**: Java Servlets, Java Models, mySQL (Database)
+* **Security Features**: SQL Injection, Cross-Site Scripting (XSS), Glassfish roles
 
 
 # Roles
